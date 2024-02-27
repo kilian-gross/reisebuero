@@ -6,6 +6,8 @@
     <title>Home</title>
 </head>
 <body>
-    
+    <?php include "components/header.html"; ?>
+
+    <?php include "components/footer.html"; ?>
 </body>
 </html>
