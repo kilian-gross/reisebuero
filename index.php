@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
     <title>Home</title>
 </head>
 <body>
-    <?php include "components/header.html"; ?>
+    <?php include "components/header.html" ?>
+    <div class="content">
 
-    <?php include "components/footer.html"; ?>
+    </div>
 </body>
 </html>
