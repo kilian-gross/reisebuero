@@ -27,3 +27,7 @@ nav {
     text-decoration: none;
     user-select: none;
 }
+
+.nav-links:hover {
+    color: var(--accent-color);
+}
