@@ -1,5 +1,5 @@
 @import "./globals.css";
 
-.content {
+main {
     margin-top: var(--header-size);
 }
