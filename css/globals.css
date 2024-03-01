@@ -1,3 +1,7 @@
+:root {
+    --header-size: max(15vh, 6rem);
+}
+
 body {
     margin: 0;
     padding: 0;

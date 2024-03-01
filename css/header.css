@@ -1,7 +1,8 @@
+@import "./globals.css";
+
 header {
     width: 100vw;
-    height: 15vh;
-    min-height: 6rem;
+    height: var(--header-size);
     box-sizing: border-box;
     padding-left: 2rem;
     padding-right: 2rem;
