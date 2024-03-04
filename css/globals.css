@@ -1,5 +1,6 @@
 :root {
     --header-size: max(15vh, 6rem);
+    --accent-color: rgb(0, 85, 141);
 }
 
 body {
