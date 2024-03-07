@@ -10,9 +10,10 @@
 </head>
 
 <body>
+    overflow-x: hidden;
     <?php include "components/header.html" ?>
     <main>
-
+    <?php include "components/imageslider.html"?>
     </main>
 </body>
 
