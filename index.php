@@ -11,9 +11,9 @@
 
 <body>
     <?php include "components/header.html" ?>
-    <div class="content">
+    <main>
 
-    </div>
+    </main>
 </body>
 
 </html>
