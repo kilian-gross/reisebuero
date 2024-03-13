@@ -12,10 +12,10 @@
     <?php #echo "<img src='htdocs/reisebuero/resources/images.jpeg'/>" ?> <br>
     <?php echo "<p>" . "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam" . "<p>"?>
 
-    <form action="number_of_rooms.php" method="POST">
+    <form action="prize_of_rooms.php" method="POST">
     Anzahl Einzelzimmer: <input type="int" name="number_singlerooms"><br>
     Anzahl Doppelzimmer: <input type="int" name="number_doublerooms"><br>
-    <input type="submit" value="book">
+    <input type="submit">
 
 </body>
 </html>
