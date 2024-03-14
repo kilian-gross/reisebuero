@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown-Menü mit Positionierung</title>
+  <style>
+    /* Stil für das Formular */
+    form {
+      position: absolute;
+      top: 10rem;
+      left: 1170px;
+      transform: translate(-50%, -50%);
+    }
+    
+    /* Stil für das Dropdown-Menü */
+    select {
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    /* Stil für das Label */
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<form id="auswahlForm" action="room_selection.php" method="post">
+  <label for="auswahl">Wähle eine Option:</label>
+  <select name="auswahl" id="auswahl">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <!-- Weitere Optionen hier hinzufügen -->
+  </select>
+  <input type="submit" value="Auswählen">
+</form>
+
+<script>
+  // Funktion zum Setzen eines Cookies
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // Funktion zum Auslesen des ausgewählten Werts und Setzen des Cookies
+  document.getElementById('auswahlForm').addEventListener('submit', function(event) {
+    var auswahl = document.getElementById('auswahl').value;
+    setCookie('auswahl', auswahl, 30); // Hier 30 Tage als Ablaufzeit für den Cookie
+  });
+</script>
+
+</body>
+</html>
