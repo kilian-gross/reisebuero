@@ -13,16 +13,13 @@
     <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam <p>
 
     <form action="room_selection.php" method="POST">
-    number of singlerooms: <input type="int" name="number_singlerooms"><br>
-    number of doublerooms: <input type="int" name="number_doublerooms"><br>
-    number of suites: <input type="int" name="number_suites"><br>
+    number of singlerooms: <input type="number" name="number_singlerooms" required><br>
+    number of doublerooms: <input type="number" name="number_doublerooms" required><br>
+    number of suites: <input type="number" name="number_suites" rqu><br>
     <input type="submit">
 
     <?php
-    if (empty($_POST["number_singlerooms"]) and empty($_POST["number_doublerooms"])) {
-        echo "Please select a room";
-    }
-    else {
+    if (isset($_POST['number_suites'])) {
         $Total = $_POST["number_singlerooms"]*200 + $_POST["number_doublerooms"]*320 + $_POST["number_suites"]*400; 
         echo "Price: <br>";
         echo "price single rooms:" . $_POST["number_singlerooms"]*200 . "CHF <br>";
@@ -33,8 +30,13 @@
         setcookie(amount_single_room, $_POST["number_singlerooms"]);
         setcookie(amount_double_room, $_POST["number_doublerooms"]);
         setcookie(price, $Total);
-    } 
+        
+    }
     ?>
-
+    <script>
+        if (document.cookie != "") {
+            window.location.href = "personal_information.php";
+        }
+    </script>
 </body>
 </html>
