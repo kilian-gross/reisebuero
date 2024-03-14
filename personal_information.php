@@ -69,7 +69,7 @@
         if ($conn->multi_query($sql) === TRUE) {
         echo "Set up successful";
         } else {
-        echo "Error creating database: " . $conn->error;
+        echo "Error setting database up: " . $conn->error;
         }
 
         $conn->close();
