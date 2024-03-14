@@ -46,45 +46,47 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-
+        if (isset($_POST['name'])) {
+ 
         // Create database
-        $sql = "CREATE DATABASE IF NOT EXISTS Touch_Grass;
-                CREATE TABLE IF NOT EXISTS Bookings(
-                    id INT,
-                    hotel VARCHAR,
-                    amount_suite SMALLINT,
-                    amount_single_room SMALLINT,
-                    amount_double_room SMALLINT,
-                    price INT,
-                    first_name VARCHAR,
-                    surname VARCHAR,
-                    date_of_birth DATE,
-                    email VARCHAR,
-                    phone_number VARCHAR,
-                    home_address VARCHAR,
-                    city VARCHAR,
-                    postal_code VARCHAR,
-                    PRIMARY KEY (id)
-                );
-                INSERT INTO Bookings VALUES(
-                    {$_COOKIE['hotel_selection']}, 
-                    {$_COOKIE['amount_suite']}, 
-                    {$_COOKIE['amount_single_room']},
-                    {$_COOKIE['amount_double_room']},
-                    {$_COOKIE['price']},
-                    {$_POST['name']},
-                    {$_POST['surname']},
-                    {$_POST['date_of_birth']},
-                    {$_POST['email']},
-                    {$_POST['phone_number']},
-                    {$_POST['address']},
-                    {$_POST['city']},
-                    {$_POST['postal_code']},
-                );";
-        if ($conn->multi_query($sql) === TRUE) {
-        echo "Set up successful";
-        } else {
-        echo "Error setting database up: " . $conn->error;
+            $sql = "CREATE DATABASE IF NOT EXISTS Touch_Grass;
+                    CREATE TABLE IF NOT EXISTS Bookings(
+                        id INT,
+                        hotel VARCHAR,
+                        amount_suite SMALLINT,
+                        amount_single_room SMALLINT,
+                        amount_double_room SMALLINT,
+                        price INT,
+                        first_name VARCHAR,
+                        surname VARCHAR,
+                        date_of_birth DATE,
+                        email VARCHAR,
+                        phone_number VARCHAR,
+                        home_address VARCHAR,
+                        city VARCHAR,
+                        postal_code VARCHAR,
+                        PRIMARY KEY (id)
+                    );
+                    INSERT INTO Bookings VALUES(
+                        {$_COOKIE['hotel_selection']}, 
+                        {$_COOKIE['amount_suite']}, 
+                        {$_COOKIE['amount_single_room']},
+                        {$_COOKIE['amount_double_room']},
+                        {$_COOKIE['price']},
+                        {$_POST['name']},
+                        {$_POST['surname']},
+                        {$_POST['date_of_birth']},
+                        {$_POST['email']},
+                        {$_POST['phone_number']},
+                        {$_POST['address']},
+                        {$_POST['city']},
+                        {$_POST['postal_code']},
+                    );";
+            if ($conn->multi_query($sql) === TRUE) {
+            echo "Set up successful";
+            } else {
+            echo "Error setting database up: " . $conn->error;
+            }
         }
 
         $conn->close();
