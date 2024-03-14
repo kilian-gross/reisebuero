@@ -33,5 +33,46 @@
 
         <input type="submit" value="Book">
     </form>
+
+    <?php
+        $servername = "localhost:8889";
+        $username = "root";
+        $password = "root";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        // Create database
+        $sql = "CREATE DATABASE IF NOT EXISTS Touch_Grass;
+                CREATE TABLE IF NOT EXISTS Bookings(
+                    id INT,
+                    hotel VARCHAR,
+                    amount_suite SMALLINT,
+                    amount_single_room SMALLINT,
+                    amount_double_room SMALLINT,
+                    price INT,
+                    first_name VARCHAR,
+                    surname VARCHAR,
+                    date_of_birth DATE,
+                    email VARCHAR,
+                    phone_number VARCHAR,
+                    home_address VARCHAR,
+                    city VARCHAR,
+                    postal_code VARCHAR,
+                    PRIMARY KEY (id)
+                );";
+        if ($conn->multi_query($sql) === TRUE) {
+        echo "Set up successful";
+        } else {
+        echo "Error creating database: " . $conn->error;
+        }
+
+        $conn->close();
+    ?> 
 </body>
 </html>
