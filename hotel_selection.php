@@ -8,7 +8,7 @@
           type="text/javascript"></script>
 </head> 
 <body>
-  <div id="map" style="width: 1000px; height: 400px; margin-top: 7rem"></div>
+  <div id="map" style="width: 1090px; height: 400px; margin-top: 7rem"></div>
 
   <script type="text/javascript">
     var locations = [
@@ -22,7 +22,7 @@
       ["<b>Abandoned Gulag:</b> Embark on an unparalleled journey into the depths of history at the Gulag correctional labor camp in Krasnoyarsk Krai! Experience the stark reality of a bygone era as you immerse yourself in the preserved remnants of this infamous Soviet penal system. Our accommodations, reminiscent of the harsh conditions endured by prisoners, offer a sobering glimpse into the past. Wake up to the solemn silence of the Siberian wilderness, surrounded by remnants of barbed wire fences and guard towers. Explore the camp's historical artifacts and exhibits, shedding light on the struggles faced by those imprisoned here. Our knowledgeable guides provide insight into the dark chapters of Soviet history, offering a unique opportunity for reflection and remembrance. Whether you seek understanding or contemplation, a visit to the Gulag camp promises an unforgettable journey into the depths of human resilience and perseverance. Book your visit now and embark on a transformative exploration of history and memory.", 69.40530156824788, 87.64918903269229, 8],
     ]
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 1,
+      zoom: 1.5,
       center: new google.maps.LatLng(13.94934, -38.36654),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });

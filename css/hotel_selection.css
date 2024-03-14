@@ -9,7 +9,7 @@
     form {
       position: absolute;
       top: 10rem;
-      left: 1170px;
+      left: 1250px;
       transform: translate(-50%, -50%);
     }
     
@@ -34,10 +34,14 @@
 <form id="auswahlForm" action="room_selection.php" method="post">
   <label for="auswahl">Wähle eine Option:</label>
   <select name="auswahl" id="auswahl">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-    <!-- Weitere Optionen hier hinzufügen -->
+    <option value="Post Ranch Inn">Post Ranch Inn</option>
+    <option value="Ithaafushi">Ithaafushi</option>
+    <option value="Offshore Oil Rig">Offshore Oil Rig</option>
+    <option value="Deception Station">Deception Station</option>
+    <option value="Active War Zone">Active War Zone</option>
+    <option value="Marina Bay Sands">Marina Bay Sands</option>
+    <option value="The Plaza">The Plaza</option>
+    <option value="Abandoned Gulag">Abandoned Gulag</option>
   </select>
   <input type="submit" value="Auswählen">
 </form>
