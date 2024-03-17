@@ -1,7 +1,7 @@
 @import "./globals.css";
 
 main {
-    margin-top: var(--header-size)*0.75;
+    
     z-index: 0;
     
 }
@@ -26,7 +26,7 @@ main {
     display: flex;
     column-gap: 1rem;
     position:absolute;
-    bottom: 4rem;
+    bottom: 8rem;
     left: 50%;
     transform: translateX(-50%);
     color: #387c00;
