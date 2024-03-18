@@ -35,9 +35,8 @@
             <input type="text" id="postal-code" name="postal_code" required>
 
             <?php 
-                if (isset($_COOKIE["price"])) {
-                    echo "<p>{$_COOKIE["price"]}</p>";
-                } 
+                $total = $_POST["number_singlerooms"]*200 + $_POST["number_doublerooms"]*320 + $_POST["number_suites"]*400; 
+                echo $total;
             ?>
 
             <input type="submit" value="Book" id="submit-button">
@@ -80,11 +79,11 @@
                         PRIMARY KEY (id)
                     );
                     INSERT INTO Bookings VALUES(
-                        {$_COOKIE['hotel_selection']}, 
-                        {$_COOKIE['amount_suite']}, 
-                        {$_COOKIE['amount_single_room']},
-                        {$_COOKIE['amount_double_room']},
-                        {$_COOKIE['price']},
+                        {$_POST['hotel_selection']}, 
+                        {$_POST['amount_suite']}, 
+                        {$_POST['amount_single_room']},
+                        {$_POST['amount_double_room']},
+                        {$total},
                         {$_POST['name']},
                         {$_POST['surname']},
                         {$_POST['date_of_birth']},
