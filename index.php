@@ -16,7 +16,7 @@
     <main>
     <?php include "components/imageslider.html"?>
     <p class="dream-vacation"> Experience your dream vacation for the best prices</p>
-    <p> this is test text </p>
+    <?php include "components/Infotext.html"?>
     </main>
     
 

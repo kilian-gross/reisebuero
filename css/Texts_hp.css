@@ -11,7 +11,7 @@ main {
     
     .dream-vacation {
         position: absolute;
-        top: 50%; /* Position the text vertically in the middle */
+        top: 30%; /* Position the text vertically in the middle */
         transform: translateY(-50%); /* Adjust the text's vertical position based on its own height */
         left: 50%; /* Position the text horizontally in the middle */
         transform: translateX(-50%); /* Adjust the text's horizontal position based on its own width */
@@ -19,6 +19,8 @@ main {
         font-size: 50px;
         color: rgb(255, 255, 255);
         font-weight: bold; 
-        text-shadow: 5px 5px 10px rgb(126, 126, 126);
+        text-shadow: 0px 0px 10px rgb(0, 0, 0);
     }
+
+
 }
