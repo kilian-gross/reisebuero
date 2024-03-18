@@ -93,10 +93,14 @@
                         {$_POST['city']},
                         {$_POST['postal_code']},
                     );";
+            if ($conn->multi_query($sql) === TRUE) {
+                echo "<script> window.location.href = 'homepage.php'; </script>";
+            } else {
+                echo "Error setting database up: " . $conn->error;
+            }
         }
 
         $conn->close();
-        echo "<script> window.location.href = 'homepage.php'; </script>"
     ?> 
 </body>
 </html>
