@@ -36,7 +36,7 @@
 
             <?php 
                 $total = $_POST["amount_single_room"]*200 + $_POST["amount_double_room"]*320 + $_POST["amount_suite"]*400; 
-                echo $total;
+                echo "Total: {$total} CHF";
             ?>
 
             <input type="submit" value="Book" id="submit-button">
