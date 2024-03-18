@@ -93,11 +93,6 @@
                         {$_POST['city']},
                         {$_POST['postal_code']},
                     );";
-            if ($conn->multi_query($sql) === TRUE) {
-            echo "Set up successful";
-            } else {
-            echo "Error setting database up: " . $conn->error;
-            }
         }
 
         $conn->close();
