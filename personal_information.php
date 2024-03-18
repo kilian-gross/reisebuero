@@ -34,6 +34,12 @@
             <label for="postal-code">Postal code</label>
             <input type="text" id="postal-code" name="postal_code" required>
 
+            <?php 
+                if (isset($_COOKIE["price"])) {
+                    echo "<p>{$_COOKIE["price"]}</p>";
+                } 
+            ?>
+
             <input type="submit" value="Book" id="submit-button">
         </form>
     </div>
