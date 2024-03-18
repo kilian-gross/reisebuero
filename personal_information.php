@@ -36,9 +36,11 @@
     </form>
 
     <?php
-        $servername = "localhost:8889";
-        $username = "root";
-        $password = "root";
+        $config = parse_ini_file("config.ini");
+
+        $servername = $config["db_url"];
+        $username = $config["db_username"];
+        $password = $config["db_password"];
 
         // Create connection
         $conn = new mysqli($servername, $username, $password);
