@@ -26,10 +26,10 @@
         echo "price double rooms:" . $_POST["number_doublerooms"]*320 . "CHF <br>";
         echo "price suites" . $_POST["number_suites"]*400 . "CHF <br>";
         echo "total:". $Total . "CHF";
-        setcookie(amount_suite, POST["number_suites"]);
-        setcookie(amount_single_room, $_POST["number_singlerooms"]);
-        setcookie(amount_double_room, $_POST["number_doublerooms"]);
-        setcookie(price, $Total);
+        setcookie("amount_suite", $_POST["number_suites"]);
+        setcookie("amount_single_room", $_POST["number_singlerooms"]);
+        setcookie("amount_double_room", $_POST["number_doublerooms"]);
+        setcookie("price", $Total);
         
     }
     ?>
