@@ -35,7 +35,7 @@
             <input type="text" id="postal-code" name="postal_code" required>
 
             <?php 
-                $total = $_POST["number_singlerooms"]*200 + $_POST["number_doublerooms"]*320 + $_POST["number_suites"]*400; 
+                $total = $_POST["amount_single_room"]*200 + $_POST["amount_double_room"]*320 + $_POST["amount_suite"]*400; 
                 echo $total;
             ?>
 
