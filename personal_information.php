@@ -96,6 +96,7 @@
         }
 
         $conn->close();
+        echo "<script> window.location.href = 'homepage.php'; </script>"
     ?> 
 </body>
 </html>
