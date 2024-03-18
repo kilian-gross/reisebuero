@@ -7,33 +7,36 @@
     <title>Personal Information</title>
 </head>
 <body>
-    <form action="<?php __FILE__ ?>" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+    <?php include "components/header.html"; ?>
+    <div class="form-container">
+        <form action="<?php __FILE__ ?>" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="surname">Surname</label>
-        <input type="text" id="surname" name="surname" required>
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" required>
 
-        <label for="date-of-birth">Date of birth</label>
-        <input type="date" id="date-of-birth" name="date_of_birth" required>
+            <label for="date-of-birth">Date of birth</label>
+            <input type="date" id="date-of-birth" name="date_of_birth" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="phone-number">Phone number</label>
-        <input type="tel" id="phone-number" name="phone_number" required>
+            <label for="phone-number">Phone number</label>
+            <input type="tel" id="phone-number" name="phone_number" required>
 
-        <label for="address">Address</label>
-        <input type="text" id="address" name="address" required>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
 
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" required>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
 
-        <label for="postal-code">Postal code</label>
-        <input type="text" id="postal-code" name="postal_code" required>
+            <label for="postal-code">Postal code</label>
+            <input type="text" id="postal-code" name="postal_code" required>
 
-        <input type="submit" value="Book">
-    </form>
+            <input type="submit" value="Book" id="submit-button">
+        </form>
+    </div>
 
     <?php
         $config = parse_ini_file("config.ini");
