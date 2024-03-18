@@ -1,0 +1,35 @@
+
+
+.text-left {
+    width: 50%;
+    clear: left; 
+  }
+  
+
+
+
+
+  body {
+    margin-top: var(--header-size)*0.75;
+    z-index: 0;
+    
+    .container {
+        position: relative; 
+        overflow-x: hidden;
+    }
+    
+    .about-us-title {
+        position: absolute;
+        top: 30%; 
+        transform: translateY(-50%); 
+        left: 50%; 
+        transform: translateX(-50%); 
+        text-align: center; 
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        font-weight: bold; 
+        text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+
+
+}

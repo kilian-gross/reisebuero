@@ -8,7 +8,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0rem 1rem 2rem .1rem rgb(92, 92, 92);
+    box-shadow: 0rem 0rem 2rem .1rem rgb(92, 92, 92);
     bottom: 0;
     z-index: 10;
     background-color: white;
