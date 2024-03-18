@@ -18,14 +18,11 @@ Info {
 
     nav2 {
         left:25%;
-        top: 5rem;
-        bottom: 25rem;
         text-align: center;
         position: relative;
         width: 50vw;
         height: 56px;
         line-height: 56px;
-        padding: 20px 0;
         border-top: 2px solid rgb(120,120,120);
         border-bottom: 2px solid rgb(120,120,120);
         gap: 6rem;
@@ -48,5 +45,5 @@ Info {
     .image-container {
         display: flex;
         justify-content: center;
-        margin-top: 10rem; /* Adjust this value to leave the desired space */
+        margin-top: 10rem; 
       }

@@ -18,8 +18,7 @@
     <p class="dream-vacation"> Experience your dream vacation for the best prices</p>
     <?php include "components/Infotext.html"?>
     </main>
-    
-
+    <?php include "components/footer.html" ?>
 
 
     
