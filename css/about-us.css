@@ -1,9 +1,18 @@
 
 
 .text-left {
-    width: 50%;
-    clear: left; 
+    width: 80%;
+    padding-left: 10%;
+    font-size: 1.5rem;
+    text-align: justify;
   }
+
+.text-title{
+    width: 100%;
+    padding-left: 45%;
+    font-size: 2rem;
+
+}
 
   body {
     margin-top: var(--header-size)*0.75;
