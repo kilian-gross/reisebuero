@@ -76,5 +76,6 @@
 }
   </script>
   <?php include "css/hotel_selection.css" ?>.
+  <?php include "components/footer.html" ?>.
 </body>
 </html>
