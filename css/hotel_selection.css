@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropdown-Menü mit Positionierung</title>
   <style>
-    /* Stil für das Formular */
     form {
       position: absolute;
-      top: 10rem;
+      top: 11.2vw;
       left: 1250px;
       transform: translate(-50%, -50%);
     }
-    
-    /* Stil für das Dropdown-Menü */
+
     select {
       width: 200px;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 16px;
+      font-family: Arial, sans-serif;
     }
-    
-    /* Stil für das Label */
-    label {
+
+    label,
+    select option {
       display: block;
       margin-bottom: 10px;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    input[type="submit"] {
+      font-family: 'Arial', sans-serif;
     }
   </style>
 </head>
@@ -47,7 +49,6 @@
 </form>
 
 <script>
-  // Funktion zum Setzen eines Cookies
   function setCookie(name, value, days) {
     var expires = "";
     if (days) {
@@ -57,13 +58,10 @@
     }
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
   }
-
-  // Funktion zum Auslesen des ausgewählten Werts und Setzen des Cookies
-  document.getElementById('auswahlForm').addEventListener('submit', function(event) {
+  document.getElementById('auswahlForm')addEventListener('submit', function(event) {
     var auswahl = document.getElementById('auswahl').value;
-    setCookie('auswahl', auswahl, 30); // Hier 30 Tage als Ablaufzeit für den Cookie
+    setCookie('auswahl', auswahl, 30);
   });
 </script>
 
 </body>
-</html>
