@@ -5,17 +5,17 @@ main {
     z-index: 0;
     
     .container {
-        position: relative; /* Establish positioning context for absolute positioning */
+        position: relative; 
         overflow-x: hidden;
     }
     
     .dream-vacation {
         position: absolute;
-        top: 30%; /* Position the text vertically in the middle */
-        transform: translateY(-50%); /* Adjust the text's vertical position based on its own height */
-        left: 50%; /* Position the text horizontally in the middle */
-        transform: translateX(-50%); /* Adjust the text's horizontal position based on its own width */
-        text-align: center; /* Center align the text */
+        top: 30%; 
+        transform: translateY(-50%); 
+        left: 50%; 
+        transform: translateX(-50%); 
+        text-align: center; 
         font-size: 50px;
         color: rgb(255, 255, 255);
         font-weight: bold; 

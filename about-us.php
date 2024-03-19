@@ -9,17 +9,17 @@
 </head>
 
 <body>
+
     overflow-x: hidden;
 
-    <?php include "components/header.html" ?>
+    <?php include "components/header.html" ?>  
     <body>
 
-        <?php include "components/about-us.html"?>
+        <?php include "components/about-us.html"?> 
+
     </body>
-    <?php include "components/footer.html" ?>
+    <?php include "components/footer.html" ?> 
 
-
-    
 </body>
 
 </html>
