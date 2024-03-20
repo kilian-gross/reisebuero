@@ -47,6 +47,7 @@
 
             <input type="submit" value="Book" id="submit-button">
         </form>
+        <?php include "components/footer.html"; ?>
     </div>
 
     <?php
