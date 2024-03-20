@@ -50,6 +50,7 @@ label {
     grid-column: span 2;
     justify-items: center;
     align-content: center;
+    text-align: center;
 }
 
 #submit-button:hover {
