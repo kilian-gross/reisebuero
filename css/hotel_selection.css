@@ -1,5 +1,9 @@
 @import "./globals.css";
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   padding: 2rem;
   display: flex;
