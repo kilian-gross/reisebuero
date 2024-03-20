@@ -10,9 +10,11 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0rem 1rem 2rem .1rem rgb(162, 162, 162);
+    box-shadow: 0rem 1rem 2rem .1rem rgb(92, 92, 92);
     position: fixed;
     top: 0;
+    z-index: 10;
+    background-color: white;
 
 }
 
