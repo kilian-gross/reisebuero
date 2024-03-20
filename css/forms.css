@@ -3,15 +3,20 @@
 body {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(239, 239, 239);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh + var(--header-size));
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
 .form-container {
-    margin-top: var(--header-size);
     min-width: 30rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 .1rem 5rem .1rem rgb(214, 214, 214);
