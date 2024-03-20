@@ -16,7 +16,6 @@ main {
 #map {
   width: 1090px; 
   height: 400px;
-  position: static;
   z-index: -100;
 }
 

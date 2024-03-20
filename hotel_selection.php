@@ -12,7 +12,7 @@
   <main>
     <div id="map"></div>
     <form id="auswahlForm" action="room_selection.php" method="post">
-      <label for="auswahl">Wähle eine Option:</label>
+      <label for="auswahl">Choose a destination:</label>
       <select name="auswahl" id="auswahl">
         <option value="Post Ranch Inn">Post Ranch Inn</option>
         <option value="Ithaafushi">Ithaafushi</option>
@@ -23,7 +23,7 @@
         <option value="The Plaza">The Plaza</option>
         <option value="Abandoned Gulag">Abandoned Gulag</option>
       </select>
-      <input type="submit" id="submit" value="Auswählen">
+      <input type="submit" id="submit" value="Choose">
     </form>
 
     <script>
