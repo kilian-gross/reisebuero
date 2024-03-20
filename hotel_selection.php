@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html> 
 <head> 
-  <?php include "components/header.html" ?>.
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
   <title>Hotel Selection</title> 
   <link rel="stylesheet" href="css/hotel_selection.css">
@@ -9,6 +8,7 @@
           type="text/javascript"></script>
 </head> 
 <body>
+<?php include "components/header.html" ?>
   <main>
     <div id="map"></div>
     <form id="auswahlForm" action="room_selection.php" method="post">
@@ -107,7 +107,7 @@
       })(marker, i));
     }
     </script>
-    <?php include "components/footer.html" ?>
   </main>
+  <?php include "components/footer.html" ?>
 </body>
 </html>
