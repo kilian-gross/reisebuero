@@ -1,67 +1,61 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown-Menü mit Positionierung</title>
-  <style>
-    form {
-      position: absolute;
-      top: 11.2vw;
-      left: 1250px;
-      transform: translate(-50%, -50%);
-    }
+@import "./globals.css";
 
-    select {
-      width: 200px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-    }
+main {
+  padding: 2rem;
+  display: flex;
+  gap: 4rem;
+  height: calc(100vh - var(--header-size));
+  width: 100vw;
+  margin-top: var(--header-size);
+}
 
-    label,
-    select option {
-      display: block;
-      margin-bottom: 10px;
-      font-family: 'Arial', sans-serif;
-    }
-    
-    input[type="submit"] {
-      font-family: 'Arial', sans-serif;
-    }
-  </style>
-</head>
-<body>
+#map {
+  width: 1090px; 
+  height: 400px;
+  position: static;
+  z-index: -100;
+}
 
-<form id="auswahlForm" action="room_selection.php" method="post">
-  <label for="auswahl">Wähle eine Option:</label>
-  <select name="auswahl" id="auswahl">
-    <option value="Post Ranch Inn">Post Ranch Inn</option>
-    <option value="Ithaafushi">Ithaafushi</option>
-    <option value="Offshore Oil Rig">Offshore Oil Rig</option>
-    <option value="Deception Station">Deception Station</option>
-    <option value="Active War Zone">Active War Zone</option>
-    <option value="Marina Bay Sands">Marina Bay Sands</option>
-    <option value="The Plaza">The Plaza</option>
-    <option value="Abandoned Gulag">Abandoned Gulag</option>
-  </select>
-  <input type="submit" value="Auswählen">
-</form>
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
 
-<script>
-  function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  }
-  document.getElementById('auswahlForm')addEventListener('submit', function(event) {
-    var auswahl = document.getElementById('auswahl').value;
-    setCookie('auswahl', auswahl, 30);
-  });
-</script>
 
-</body>
+select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+select:focus {
+  border: 1px solid var(--accent-color);
+}
+
+label,
+select option {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+#submit {
+  font-family: 'Arial', sans-serif;
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(209, 209, 209);
+  transition: 100ms ease-in;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
