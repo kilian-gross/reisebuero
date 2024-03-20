@@ -129,7 +129,8 @@
                                     $_POST['postal_code'],
             );
             if ($db_insertion->execute() === TRUE) {
-                echo "<script> window.location.href = 'homepage.php'; </script>";
+                echo "<script> alert('Booking successful!') </script>";
+                echo "<script> window.location.href = 'index.php'; </script>";
             } else {
                 echo "Error setting database up: " . $conn->error;
             }
