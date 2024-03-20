@@ -1,0 +1,61 @@
+@import "./globals.css";
+
+main {
+  padding: 2rem;
+  display: flex;
+  gap: 4rem;
+  height: calc(100vh - var(--header-size));
+  width: 100vw;
+  margin-top: var(--header-size);
+}
+
+#map {
+  width: 1090px; 
+  height: 400px;
+  position: static;
+  z-index: -100;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+select:focus {
+  border: 1px solid var(--accent-color);
+}
+
+label,
+select option {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+#submit {
+  font-family: 'Arial', sans-serif;
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(209, 209, 209);
+  transition: 100ms ease-in;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
